@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "txmsimulator"
+version = "0.0.1"
+description = "TXM beamline simulator"
+authors = ["Alberto Mittone <alberto.mittone@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/mittoalb/txmsimulator"
+repository = "https://github.com/mittoalb/txmsimulator"
+keywords = ["TXM", "image processing", "simulator"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+fabio = "2022.12.1"
+
+[tool.poetry.scripts]
+rcorr = "txmsim:main"
+
+[build-system]
+requires = ["poetry-core>=1.1.0"]
+build-backend = "poetry.core.masonry.api"

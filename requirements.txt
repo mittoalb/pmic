@@ -1,0 +1,6 @@
+build
+pip
+
+fabio==2022.12.1
+pandas
+openpyxl
